@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card3Wraper, Card2Wraper} from '../componenst/global/Card'
+import {Card2Wraper} from '../componenst/global/Card'
 import Header from '../componenst/home/Header'
 import headerBg from '../images/header_bg.jpg'
 
