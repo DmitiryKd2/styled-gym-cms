@@ -13,12 +13,13 @@ export default function Input({leadingIcon, trailingIcon, type, placeholder}) {
     )
 }
 const DivWraper = styled.div`
+border: 1px solid ${setColor.primaryColor};
 display: inline-block;
 background: ${setColor.mainGray};
 padding: 4px 8px;
 border-radius: 30px;
 margin-bottom: 4px;
-min-width: 200px;
+width: 200px;
 /* svg{
     fill: darkgrey;
     
@@ -36,7 +37,7 @@ background: transparent;
 outline: none;
 border: none;
 
-&:focus ~ svg{
+/* &:focus ~ svg{
     fill: blue;
-}
+} */
 `
