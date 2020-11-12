@@ -14,9 +14,15 @@ background: #fff;
 border-radius: 2px;
 display: inline-block;
 height: 400px;
+width: 300px;
 margin: 1rem;
 position: relative;
-width: 300px;
+
+
+@media (max-width: 420px){
+  width: 90%;
+  height: 90%;
+}
 `
 
 export const Card2Wraper = styled(CardWraper)`
