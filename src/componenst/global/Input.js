@@ -6,11 +6,11 @@ import {setColor} from '../../style'
 export default function Input({leadingIcon, trailingIcon, type, placeholder, onChange}) {
 
     const focusHandle = (e) => {
-        e.target.parentElement.style.border = `2px solid ${setColor.primaryColor}`
+        e.target.previousSibling.style.fill = `${setColor.primaryColor}`
     }
 
     const onBlurHandler = (e) => {
-        e.target.parentElement.style.border = `1px solid ${setColor.primaryColor}`
+        e.target.previousSibling.style.fill = `${setColor.darckGray}`
     }
     
     return (
@@ -34,6 +34,9 @@ padding: 4px 8px;
 border-radius: 30px;
 margin-bottom: 8px;
 width: 250px;
+& svg{
+    fill: ${setColor.darckGray}
+}
 `
 
 const InputWraper = styled.input.attrs((props) => ({
@@ -47,4 +50,6 @@ outline: none;
 border: none;
 max-width: 150px;
 font-size: 26px;
+
+}
 `

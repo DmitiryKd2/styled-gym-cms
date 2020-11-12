@@ -4,7 +4,8 @@ export const setColor = {
     primaryColor: "#2980b9",
     mainWhite: "#fff",
     mainBlack: "#222",
-    mainGray: "#e2e1e0"
+    mainGray: "#e2e1e0",
+    darckGray: "#7f8c8d"
 }
 
 export const setFont = {
