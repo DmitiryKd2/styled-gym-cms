@@ -27,12 +27,13 @@ export default function Input({leadingIcon, trailingIcon, type, placeholder, onC
 }
 const DivWraper = styled.div`
 border: 1px solid ${setColor.primaryColor};
-display: inline-block;
+display: flex;
+align-items: center;
 background: white;
 padding: 4px 8px;
 border-radius: 30px;
-margin-bottom: 4px;
-width: 200px;
+margin-bottom: 8px;
+width: 250px;
 `
 
 const InputWraper = styled.input.attrs((props) => ({
@@ -45,5 +46,5 @@ background: transparent;
 outline: none;
 border: none;
 max-width: 150px;
-
+font-size: 26px;
 `
