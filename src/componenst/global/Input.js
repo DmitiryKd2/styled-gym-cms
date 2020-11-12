@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {setColor} from '../../style'
 
 
-export default function Input({leadingIcon, trailingIcon, type, placeholder}) {
+export default function Input({leadingIcon, trailingIcon, type, placeholder, onChange}) {
 
     const focusHandle = (e) => {
         e.target.parentElement.style.border = `2px solid ${setColor.primaryColor}`
@@ -19,6 +19,7 @@ export default function Input({leadingIcon, trailingIcon, type, placeholder}) {
             <InputWraper type={type} placeholder={placeholder} 
             onFocus={focusHandle}
             onBlur = {onBlurHandler}
+            onChange = {(e) => onChange(e)}
             ></InputWraper>
             {trailingIcon}
         </DivWraper>
@@ -32,12 +33,6 @@ padding: 4px 8px;
 border-radius: 30px;
 margin-bottom: 4px;
 width: 200px;
-
-/* svg{
-    fill: darkgrey;
-    
-} */
-
 `
 
 const InputWraper = styled.input.attrs((props) => ({
@@ -51,7 +46,4 @@ outline: none;
 border: none;
 max-width: 150px;
 
-/* &:focus ~ svg{
-    fill: blue;
-} */
 `
