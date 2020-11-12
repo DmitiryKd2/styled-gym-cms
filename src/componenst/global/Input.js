@@ -4,10 +4,22 @@ import {setColor} from '../../style'
 
 
 export default function Input({leadingIcon, trailingIcon, type, placeholder}) {
+
+    const focusHandle = (e) => {
+        e.target.parentElement.style.border = `2px solid ${setColor.primaryColor}`
+    }
+
+    const onBlurHandler = (e) => {
+        e.target.parentElement.style.border = `1px solid ${setColor.primaryColor}`
+    }
+    
     return (
-        <DivWraper>
+        <DivWraper id="InputDivWraper">
             {leadingIcon}   
-            <InputWraper type={type} placeholder={placeholder}></InputWraper>
+            <InputWraper type={type} placeholder={placeholder} 
+            onFocus={focusHandle}
+            onBlur = {onBlurHandler}
+            ></InputWraper>
             {trailingIcon}
         </DivWraper>
     )
@@ -15,11 +27,12 @@ export default function Input({leadingIcon, trailingIcon, type, placeholder}) {
 const DivWraper = styled.div`
 border: 1px solid ${setColor.primaryColor};
 display: inline-block;
-background: ${setColor.mainGray};
+background: white;
 padding: 4px 8px;
 border-radius: 30px;
 margin-bottom: 4px;
 width: 200px;
+
 /* svg{
     fill: darkgrey;
     
