@@ -20,8 +20,8 @@ position: relative;
 
 
 @media (max-width: 420px){
-  width: 90%;
-  height: 90%;
+  width: 98vw;
+  height: 98vh;
 }
 `
 
