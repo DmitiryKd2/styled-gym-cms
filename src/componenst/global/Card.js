@@ -15,14 +15,15 @@ border-radius: 2px;
 display: inline-block;
 height: 400px;
 width: 300px;
-margin: 1rem;
-position: relative;
+margin: 0rem 1rem;
+/* position: relative; */
 position: fixed;
+top: 4px;
 
 
 @media (max-width: 420px){
   width: 98vw;
-  height: 98vh;
+  /* height: 98vh; */
 }
 `
 
