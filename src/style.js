@@ -12,8 +12,10 @@ export const setFont = {
     slanted: "font-family: 'Courgette', cursive;"
 }
 
-export const setFlex = ({x='center', y='center'}) => {
+export const setFlex = ({x='center', y='center',
+                         flexDirection = 'row'}) => {
     return `display: flex;
     align-items: ${y};
-    justify-content: ${x};`
+    justify-content: ${x};
+    flex-direction: ${flexDirection}`
 }

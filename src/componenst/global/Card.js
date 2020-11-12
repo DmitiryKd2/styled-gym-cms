@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Card({className}) {
+function Card({className, children}) {
     return (
         <div className={className}>
-            
+            {children}
         </div>
     )
 }
@@ -13,7 +13,7 @@ export const CardWraper = styled(Card)`
 background: #fff;
 border-radius: 2px;
 display: inline-block;
-height: 300px;
+height: 400px;
 margin: 1rem;
 position: relative;
 width: 300px;
