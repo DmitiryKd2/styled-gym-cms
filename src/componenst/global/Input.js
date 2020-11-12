@@ -36,6 +36,7 @@ margin: 0 6px;
 background: transparent;
 outline: none;
 border: none;
+max-width: 150px;
 
 /* &:focus ~ svg{
     fill: blue;

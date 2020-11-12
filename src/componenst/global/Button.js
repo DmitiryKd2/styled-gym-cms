@@ -11,6 +11,7 @@ export default function Button({title}) {
 const ButtonWraper = styled.button`
 color: ${setColor.mainWhite};
 background: ${setColor.primaryColor};
-border-radius: 30px;
+border-radius: 20px;
 padding: 4px 8px;
+outline: none
 `
