@@ -17,6 +17,7 @@ height: 400px;
 width: 300px;
 margin: 1rem;
 position: relative;
+position: fixed;
 
 
 @media (max-width: 420px){
