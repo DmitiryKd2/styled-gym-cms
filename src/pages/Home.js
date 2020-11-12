@@ -3,7 +3,7 @@ import {Card2Wraper} from '../componenst/global/Card'
 import Input from '../componenst/global/Input'
 import Header from '../componenst/home/Header'
 import headerBg from '../images/header_bg.jpg'
-import { FaEye, FaLock} from 'react-icons/fa';
+import { FaLock} from 'react-icons/fa';
 import { BsFillPersonFill } from 'react-icons/bs';
 import Container from '../componenst/global/Container'
 import Button from '../componenst/global/Button'
