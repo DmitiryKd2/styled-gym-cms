@@ -1,0 +1,30 @@
+.VertivcalNavBar-container{
+    position: relative;
+    height: 100vh;
+}
+
+.VerticalNavBar{
+    display: flex;
+    flex-direction: column;
+    background-color: #555; 
+    width: 4rem;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.VerticalNavBar-svg{
+    fill: white;
+    width: 4rem;
+    height: 4rem;
+    padding: 6px;
+    pointer-events: none;
+}
+
+a:not(.VerticalNavBar-active) a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+
+.VerticalNavBar-active{
+    background-color: #4CAF50; 
+}

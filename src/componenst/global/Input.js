@@ -50,4 +50,7 @@ outline: none;
 border: none;
 max-width: 150px;
 font-size: 26px;
+&::placeholder{
+    color: lightgrey;
+}
 `

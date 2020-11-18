@@ -13,5 +13,9 @@ color: ${setColor.mainWhite};
 background: ${setColor.primaryColor};
 border-radius: 20px;
 padding: 4px 8px;
-outline: none
+outline: none;
+border: none;
+font-size: 24px;
+width: 200px;
+text-transform: uppercase;
 `
