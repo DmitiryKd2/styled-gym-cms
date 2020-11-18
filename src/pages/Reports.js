@@ -8,7 +8,7 @@ export default function Reports() {
     const handleOnClick = async () => {
         console.log('get report')
         try {
-            const res = await axios.get('https://217.74.113.56:3000/api/clients/myClients/{"employeeId": 1125}')
+            const res = await axios.get('https://217.74.113.56:3443/api/clients/myClients/{"employeeId": 1125}')
 
             setClient(res.data)
             console.log(clients)
