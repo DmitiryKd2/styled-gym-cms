@@ -17,10 +17,10 @@ export default function Login() {
     const {userData, setUserData} = useContext(UserContext);
 
     const logIn = () => {
-        console.log(`login - ${login}, password - ${password}`)
-        console.log(userData);
+        console.log(`login - ${login}, password - ${password}`)  
         setUserData({user: {id: 1, name: 'User'}, jwtToken: '123'})
-        setUserData()
+        console.log(userData);
+
         
     }
 
