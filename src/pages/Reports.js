@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { useTable } from 'react-table'
-
 
 const axios = require('axios');
 
