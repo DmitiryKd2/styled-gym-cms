@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useState} from 'react'
 import {Card2Wraper} from '../componenst/global/Card'
 import Input from '../componenst/global/Input'
 import Header from '../componenst/home/Header'
@@ -7,19 +7,19 @@ import headerBg from '../images/header_bg.jpg'
 import { BsFillPersonFill, BsLockFill } from 'react-icons/bs';
 import Container from '../componenst/global/Container'
 import Button from '../componenst/global/Button'
-import UserContext from '../context/UserContext'
+//import UserContext from '../context/UserContext'
 
 
 export default function Login() { 
     const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
 
-    const {userData, setUserData} = useContext(UserContext);
+    //const {userData, setUserData} = useContext(UserContext);
 
     const logIn = () => {
         console.log(`login - ${login}, password - ${password}`)
         //do axios request to server
-        setUserData({user: {id: 1, name: 'User'}, jwtToken: '123'})
+        //setUserData({user: {id: 1, name: 'User'}, jwtToken: '123'})
         // setUserData()
     }
 
